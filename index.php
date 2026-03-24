@@ -9,5 +9,6 @@
     <h1>Berita Dalam Peta</h1>
     <h1>Map1</h1>
     <h1>Map2</h1>
+    <h1>Map3</h1>
 </body>
 </html>
