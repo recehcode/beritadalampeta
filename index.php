@@ -10,7 +10,7 @@
 
     <script>
         // Inisialisasi peta fokus ke Indonesia
-        var map = L.map('map').setView([-0.7893, 113.9213], 7);
+        var map = L.map('map').setView([-0.7893, 113.9213], 6);
 
         // Tambahkan layer peta OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
