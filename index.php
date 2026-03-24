@@ -9,8 +9,8 @@
     <div id="map"></div>
 
     <script>
-        // Inisialisasi peta fokus ke Iran
-        var map = L.map('map').setView([-0.7893, 113.9213], 5);
+        // Inisialisasi peta fokus ke Indonesia
+        var map = L.map('map').setView([-0.7893, 113.9213], 7);
 
         // Tambahkan layer peta OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
