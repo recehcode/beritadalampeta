@@ -10,7 +10,7 @@
 
     <script>
         // Inisialisasi peta fokus ke Iran
-        var map = L.map('map').setView([32.4279, 53.6880], 5);
+        var map = L.map('map').setView([-0.7893, 113.9213], 5);
 
         // Tambahkan layer peta OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
