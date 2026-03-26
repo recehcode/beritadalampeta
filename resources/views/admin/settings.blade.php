@@ -25,6 +25,9 @@
                     <option value="ollama" {{ $provider == 'ollama' ? 'selected' : '' }}>🦙 Ollama (Self-hosted)</option>
                     <option value="openai" {{ $provider == 'openai' ? 'selected' : '' }}>🟢 OpenAI</option>
                     <option value="gemini" {{ $provider == 'gemini' ? 'selected' : '' }}>🔵 Google Gemini</option>
+                    <option value="anthropic" {{ $provider == 'anthropic' ? 'selected' : '' }}>🟣 Anthropic (Claude)</option>
+                    <option value="deepseek" {{ $provider == 'deepseek' ? 'selected' : '' }}>🐋 DeepSeek</option>
+                    <option value="groq" {{ $provider == 'groq' ? 'selected' : '' }}>⚡ Groq</option>
                 </select>
             </div>
 
@@ -34,7 +37,7 @@
                     value="{{ $settings['llm']->firstWhere('setting_key', 'llm_api_url')->setting_value ?? '' }}"
                     placeholder="http://localhost:11434">
                 <small style="color:var(--text-muted);font-size:12px;margin-top:4px;display:block;">
-                    Ollama: http://localhost:11434 | OpenAI: https://api.openai.com | Gemini: https://generativelanguage.googleapis.com
+                    Ollama: http://localhost:11434 | OpenAI/Groq/DeepSeek: Cukup gunakan base URL | Gemini: https://generativelanguage.googleapis.com | Anthropic: https://api.anthropic.com
                 </small>
             </div>
 

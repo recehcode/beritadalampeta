@@ -12,7 +12,7 @@ class ApiSettingSeeder extends Seeder
     {
         DB::table('api_settings')->insert([
             // LLM Settings
-            ['setting_key' => 'llm_provider', 'setting_value' => 'ollama', 'setting_group' => 'llm', 'description' => 'AI Provider: ollama, openai, gemini', 'created_at' => now(), 'updated_at' => now()],
+            ['setting_key' => 'llm_provider', 'setting_value' => 'ollama', 'setting_group' => 'llm', 'description' => 'AI Provider: ollama, openai, gemini, anthropic, deepseek, groq', 'created_at' => now(), 'updated_at' => now()],
             ['setting_key' => 'llm_api_url', 'setting_value' => 'http://localhost:11434', 'setting_group' => 'llm', 'description' => 'LLM API endpoint URL', 'created_at' => now(), 'updated_at' => now()],
             ['setting_key' => 'llm_api_key', 'setting_value' => '', 'setting_group' => 'llm', 'description' => 'API key (for OpenAI/Gemini)', 'created_at' => now(), 'updated_at' => now()],
             ['setting_key' => 'llm_model', 'setting_value' => 'llama3', 'setting_group' => 'llm', 'description' => 'Model name to use', 'created_at' => now(), 'updated_at' => now()],
